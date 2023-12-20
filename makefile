@@ -26,9 +26,14 @@ $(BUILD_DIR)/%.c.o: %.c
 run: $(OBJS)
 	$(BUILD_DIR)/$(TARGET_EXEC)
 
-.PHONY: clean
+.PHONY: clean git
 clean:
 	rm -r $(BUILD_DIR)
+
+git:
+	git add $f 
+	git commit -m "$m" 
+	git push origin master
 
 -include $(DEPS)
 
