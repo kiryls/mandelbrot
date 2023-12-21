@@ -31,11 +31,10 @@ Color map_color(float value) {
 }
 
 int main(int argc, char *argv[]) {
-    InitWindow(SCREEN_W, SCREEN_H, "Mandelbrot");
 
     Color pixels[SCREEN_H][SCREEN_W];
 
-    
+    InitWindow(SCREEN_W, SCREEN_H, "Mandelbrot");
     SetTargetFPS(1);
 
     while (!WindowShouldClose()) {
